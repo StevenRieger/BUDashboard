@@ -1,0 +1,618 @@
+{
+  "generated_at": "Mar 24, 2026 10:42",
+  "groups": [
+    {
+      "type": "Enterprise",
+      "name": "Enterprise-Wide Revenue",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 8864127,
+          "ytd": 4075123,
+          "remaining": 4789004,
+          "stly": 4898977
+        },
+        {
+          "name": "Partnership Rights",
+          "goal": 1927000,
+          "ytd": 799635,
+          "remaining": 1127365,
+          "stly": null
+        },
+        {
+          "name": "Memberships",
+          "goal": 2716802,
+          "ytd": 426502,
+          "remaining": 2290300,
+          "stly": 386355
+        },
+        {
+          "name": "Events",
+          "goal": 5781472,
+          "ytd": 4328237,
+          "remaining": 1453235,
+          "stly": 3974996
+        },
+        {
+          "name": "Educational Products",
+          "goal": 948100,
+          "ytd": 109014,
+          "remaining": 839086,
+          "stly": 147047
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 2770853,
+          "ytd": 634525,
+          "remaining": 2136328,
+          "stly": 769795
+        },
+        {
+          "name": "Print Advertising",
+          "goal": 2108500,
+          "ytd": 251975,
+          "remaining": 1856525,
+          "stly": 222837
+        },
+        {
+          "name": "Consulting & AI",
+          "goal": 652500,
+          "ytd": 78096,
+          "remaining": 574404,
+          "stly": 450
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "Business Development",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 1806600,
+          "ytd": 758635,
+          "remaining": 1047965,
+          "stly": 655007
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 1547000,
+          "ytd": 180262,
+          "remaining": 1366738,
+          "stly": 163258
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "Convene Magazine",
+      "items": [
+        {
+          "name": "Digital Advertising",
+          "goal": 61500,
+          "ytd": 10000,
+          "remaining": 51500,
+          "stly": 28000
+        },
+        {
+          "name": "Print Advertising",
+          "goal": 2030000,
+          "ytd": 251975,
+          "remaining": 1778025,
+          "stly": 222837
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "Memberships",
+      "items": [
+        {
+          "name": "Memberships",
+          "goal": 2478160,
+          "ytd": 390293,
+          "remaining": 2087867,
+          "stly": 349774
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "Chapters & Engagement",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 231000,
+          "ytd": 140000,
+          "remaining": 91000,
+          "stly": 119300
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "Learning Products",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 425000,
+          "ytd": 65000,
+          "remaining": 360000,
+          "stly": null
+        },
+        {
+          "name": "Educational Products",
+          "goal": 755800,
+          "ytd": 100883,
+          "remaining": 654917,
+          "stly": 120359
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 28800,
+          "ytd": 6500,
+          "remaining": 22300,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "CEMA",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 430000,
+          "ytd": 49000,
+          "remaining": 381000,
+          "stly": 25000
+        },
+        {
+          "name": "Partnership Rights",
+          "goal": 65000,
+          "ytd": 36000,
+          "remaining": 29000,
+          "stly": null
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 23310,
+          "ytd": null,
+          "remaining": 23310,
+          "stly": null
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 197800,
+          "ytd": 4000,
+          "remaining": 193800,
+          "stly": 7706
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "EMEA",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 21500,
+          "ytd": 0,
+          "remaining": 21500,
+          "stly": 6500
+        },
+        {
+          "name": "Memberships",
+          "goal": 90000,
+          "ytd": 14824,
+          "remaining": 75176,
+          "stly": 13912
+        },
+        {
+          "name": "Educational Products",
+          "goal": 20000,
+          "ytd": 2798,
+          "remaining": 17202,
+          "stly": 1627
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 21250,
+          "ytd": 3000,
+          "remaining": 18250,
+          "stly": 1500
+        },
+        {
+          "name": "Print Advertising",
+          "goal": 78500,
+          "ytd": 0,
+          "remaining": 78500,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "APAC",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 235500,
+          "ytd": 45403,
+          "remaining": 190097,
+          "stly": 42500
+        },
+        {
+          "name": "Partnership Rights",
+          "goal": 55400,
+          "ytd": 5000,
+          "remaining": 50400,
+          "stly": null
+        },
+        {
+          "name": "Memberships",
+          "goal": 58200,
+          "ytd": 11691,
+          "remaining": 46509,
+          "stly": 13218
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 1000,
+          "ytd": 2300,
+          "remaining": -1300,
+          "stly": null
+        },
+        {
+          "name": "Educational Products",
+          "goal": 74500,
+          "ytd": 990,
+          "remaining": 73510,
+          "stly": 24986
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 40000,
+          "ytd": 3500,
+          "remaining": 36500,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "Australia & New Zealand",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 34127,
+          "ytd": 0,
+          "remaining": 34127,
+          "stly": null
+        },
+        {
+          "name": "Memberships",
+          "goal": 30442,
+          "ytd": 0,
+          "remaining": 30442,
+          "stly": null
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 8712,
+          "ytd": 0,
+          "remaining": 8712,
+          "stly": null
+        },
+        {
+          "name": "Consulting",
+          "goal": 19503,
+          "ytd": 0,
+          "remaining": 19503,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Business Unit",
+      "name": "LATAM",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 75000,
+          "ytd": 0,
+          "remaining": 75000,
+          "stly": 11000
+        },
+        {
+          "name": "Memberships",
+          "goal": 60000,
+          "ytd": 9694,
+          "remaining": 50306,
+          "stly": 8938
+        },
+        {
+          "name": "Educational Products",
+          "goal": 30000,
+          "ytd": 1274,
+          "remaining": 28726,
+          "stly": null
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 60000,
+          "ytd": 8450,
+          "remaining": 51550,
+          "stly": 2500
+        },
+        {
+          "name": "Consulting",
+          "goal": 210000,
+          "ytd": 34000,
+          "remaining": 176000,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Events",
+      "name": "Convening Leaders 2026",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 4300000,
+          "ytd": 3675720,
+          "remaining": 624280,
+          "stly": 4014670
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 4050000,
+          "ytd": 4325937,
+          "remaining": -275937,
+          "stly": 3972496
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 565000,
+          "ytd": 418813,
+          "remaining": 146187,
+          "stly": 566831
+        }
+      ]
+    },
+    {
+      "type": "Events",
+      "name": "Business Events Summit",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 700000,
+          "ytd": null,
+          "remaining": 700000,
+          "stly": null
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 500000,
+          "ytd": null,
+          "remaining": 500000,
+          "stly": null
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 140000,
+          "ytd": null,
+          "remaining": 140000,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Events",
+      "name": "CEMA Summit",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 830000,
+          "ytd": null,
+          "remaining": 830000,
+          "stly": null
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 850000,
+          "ytd": null,
+          "remaining": 850000,
+          "stly": null
+        },
+        {
+          "name": "Digital Advertising",
+          "goal": 90000,
+          "ytd": null,
+          "remaining": 90000,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Events",
+      "name": "C-APAC",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 147000,
+          "ytd": null,
+          "remaining": 147000,
+          "stly": null
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 100000,
+          "ytd": null,
+          "remaining": 100000,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Events",
+      "name": "C-LATAM",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 280000,
+          "ytd": null,
+          "remaining": 280000,
+          "stly": null
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 65000,
+          "ytd": null,
+          "remaining": 65000,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Events",
+      "name": "C-EMEA",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 435000,
+          "ytd": null,
+          "remaining": 435000,
+          "stly": null
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 172200,
+          "ytd": null,
+          "remaining": 172200,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Events",
+      "name": "C4C",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 400000,
+          "ytd": null,
+          "remaining": 400000,
+          "stly": null
+        },
+        {
+          "name": "Events Revenue",
+          "goal": 11250,
+          "ytd": null,
+          "remaining": 11250,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Products",
+      "name": "PMM",
+      "items": [
+        {
+          "name": "Educational Products",
+          "goal": 24000,
+          "ytd": 3069,
+          "remaining": 20931,
+          "stly": null
+        },
+        {
+          "name": "Consulting",
+          "goal": 45000,
+          "ytd": null,
+          "remaining": 45000,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Products",
+      "name": "BES",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 25000,
+          "ytd": null,
+          "remaining": 25000,
+          "stly": null
+        },
+        {
+          "name": "Educational Products",
+          "goal": 43800,
+          "ytd": null,
+          "remaining": 43800,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "AI",
+      "name": "Spark",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 120000,
+          "ytd": 100000,
+          "remaining": 20000,
+          "stly": 0
+        }
+      ]
+    },
+    {
+      "type": "AI",
+      "name": "Destinaitor",
+      "items": [
+        {
+          "name": "Consulting & AI Revenue",
+          "goal": 322500,
+          "ytd": 14096,
+          "remaining": 308404,
+          "stly": null
+        }
+      ]
+    },
+    {
+      "type": "Initiative",
+      "name": "Ascent",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 60000,
+          "ytd": null,
+          "remaining": 60000,
+          "stly": 25000
+        }
+      ]
+    },
+    {
+      "type": "Initiative",
+      "name": "Insights / Consulting",
+      "items": [
+        {
+          "name": "Sponsorships",
+          "goal": 100000,
+          "ytd": null,
+          "remaining": 100000,
+          "stly": null
+        },
+        {
+          "name": "Consulting",
+          "goal": 75000,
+          "ytd": 30000,
+          "remaining": 45000,
+          "stly": null
+        }
+      ]
+    }
+  ]
+}
