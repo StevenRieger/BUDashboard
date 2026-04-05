@@ -1,0 +1,6 @@
+SOURCE FILE: 2026_CEO_Enterprise_Goals KM.xlsx
+LOCATION: https://pcma2-my.sharepoint.com/:x:/g/personal/kmaggio_pcma_org/IQBBAepdSjRQTag5N4J_x2gAAQoFvwX3iUSsmPRoZNT7N_w?e=xQPpsO
+LAST MODIFIED: 2026-03-24
+OWNER: Kimberly Maggio (kmaggio@pcma.org)
+NOTE: This is a text reference to the source Excel file on Kim's OneDrive. The actual .xlsx file should be downloaded separately or accessed via the link above.
+NOTE: The bu_dashboard_data.json in this repo was generated from this spreadsheet's BU revenue data.

@@ -8,7 +8,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{font-size:16px}
 body{font-family:'Aptos','Segoe UI',Arial,sans-serif;background:#F1E7E3;color:#1A1A1A;min-height:100vh}
-.header{background:#4D3971;padding:.85rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.4)}
+.header{background:#590044;padding:.85rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.35)}
 .header-left{display:flex;align-items:center;gap:1.1rem}
 .pcma-logo img{height:42px;width:auto;display:block}
 .header-divider{width:1px;height:36px;background:rgba(255,255,255,.25)}
@@ -19,15 +19,15 @@ body{font-family:'Aptos','Segoe UI',Arial,sans-serif;background:#F1E7E3;color:#1
 .hpill{display:flex;flex-direction:column;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:7px;padding:.3rem .85rem;min-width:82px}
 .hpill-lbl{font-size:.54rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.6)}
 .hpill-val{font-size:.82rem;font-weight:700;color:#fff;margin-top:1px}
-.live-badge{display:flex;align-items:center;gap:5px;background:rgba(77,57,113,.4);border:1px solid #8D7DE4;border-radius:20px;padding:.28rem .8rem;font-size:.6rem;font-weight:700;color:#C8C0F0;text-transform:uppercase;letter-spacing:.05em}
-.live-dot{width:7px;height:7px;border-radius:50%;background:#8D7DE4;animation:pulse 2s infinite}
+.live-badge{display:flex;align-items:center;gap:5px;background:rgba(111,0,79,.25);border:1px solid #590044;border-radius:20px;padding:.28rem .8rem;font-size:.6rem;font-weight:700;color:#590044;text-transform:uppercase;letter-spacing:.05em}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#590044;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
-.banner{background:#3A2860;border-bottom:3px solid #8D7DE4;padding:.5rem 2rem}
+.banner{background:#6F004F;border-bottom:3px solid #590044;padding:.5rem 2rem}
 .color-key{background:#fff;border-bottom:1px solid #D5C8D8;padding:.45rem 1.8rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
-.totals-bar{background:#fff;border-bottom:2px solid #4D3971;padding:.75rem 2rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
+.totals-bar{background:#fff;border-bottom:2px solid #590044;padding:.75rem 2rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
 .total-item{display:flex;flex-direction:column;align-items:center}
 .total-lbl{font-size:.54rem;text-transform:uppercase;letter-spacing:.1em;color:#888;font-weight:600}
-.total-val{font-size:1.1rem;font-weight:800;color:#4D3971;margin-top:2px}
+.total-val{font-size:1.1rem;font-weight:800;color:#590044;margin-top:2px}
 .total-sub{font-size:.58rem;margin-top:1px}
 .total-divider{width:1px;height:40px;background:#E0D0DC}
 main{padding:1.1rem 1.8rem;display:flex;flex-direction:column;gap:1.2rem}
@@ -97,7 +97,7 @@ main{padding:1.1rem 1.8rem;display:flex;flex-direction:column;gap:1.2rem}
 .chart-h{height:160px;position:relative}
 .error-banner{background:#C0143C;color:#fff;text-align:center;padding:.65rem 1.5rem;font-size:.8rem;font-weight:600;position:sticky;top:72px;z-index:199}
 footer{text-align:center;padding:.9rem 2rem;border-top:1px solid #E0D0DC;font-size:.58rem;color:#888;background:#fff}
-footer strong{color:#4D3971}
+footer strong{color:#590044}
 @media(max-width:680px){
   html{font-size:13px}
   .header{padding:.6rem .9rem}
@@ -133,10 +133,10 @@ footer strong{color:#4D3971}
 <div class="banner"></div>
 
 <div class="color-key">
-  <span style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#4D3971;">Revenue Progress:</span>
+  <span style="font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#590044;">Revenue Progress:</span>
+  <span style="background:#C0143C;font-size:.65rem;font-weight:700;color:#fff;padding:.25rem .8rem;border-radius:4px;display:inline-block;">&lt; 50%</span>
+  <span style="background:#E8A020;font-size:.65rem;font-weight:700;color:#fff;padding:.25rem .8rem;border-radius:4px;display:inline-block;">50 - 79%</span>
   <span style="background:#1E9B6B;font-size:.65rem;font-weight:700;color:#fff;padding:.25rem .8rem;border-radius:4px;display:inline-block;">&ge; 80%</span>
-  <span style="background:#E8A020;font-size:.65rem;font-weight:700;color:#fff;padding:.25rem .8rem;border-radius:4px;display:inline-block;">40 - 79%</span>
-  <span style="background:#C0143C;font-size:.65rem;font-weight:700;color:#fff;padding:.25rem .8rem;border-radius:4px;display:inline-block;">&lt; 40%</span>
 </div>
 
 <div class="totals-bar">
@@ -166,10 +166,10 @@ footer strong{color:#4D3971}
 const DATA_URL = 'bu_dashboard_data.json';
 
 const GROUP_COLORS = {
-  'enterprise':             { color: '#85165A', light: '#F5ECF1' },
-  'business_unit':          { color: '#4D3971', light: '#EEE9F5' },
-  'events':                 { color: '#85165A', light: '#F5ECF1' },
-  'products_ai_initiative': { color: '#4D3971', light: '#EEE9F5' },
+  'enterprise':             { color: '#590044', light: '#F5EAF2' },
+  'business_unit':          { color: '#6F004F', light: '#F2E8F0' },
+  'events':                 { color: '#590044', light: '#F5EAF2' },
+  'products_ai_initiative': { color: '#6F004F', light: '#F2E8F0' },
 };
 
 let COLOR_GROUPS = null;
@@ -184,14 +184,14 @@ function fmtC(v) {
 }
 function pColor(p) {
   if (p === null) return '#888';
-  return p >= 80 ? '#1E9B6B' : p >= 40 ? '#E8A020' : '#C0143C';
+  return p >= 80 ? '#1E9B6B' : p >= 50 ? '#E8A020' : '#C0143C';
 }
 function chipCls(p, upcoming) {
   if (upcoming) return 'chip-na';
   if (p === null) return 'chip-na';
   if (p > 100) return 'chip-exc';
   if (p >= 80) return 'chip-good';
-  if (p >= 40) return 'chip-warn';
+  if (p >= 50) return 'chip-warn';
   return 'chip-low';
 }
 function groupPct(cg) {
@@ -250,7 +250,7 @@ function buildDashboard(cgs) {
             <div class="cube-name">${m.name}</div>
             <div class="cube-val">${hasY ? fmtC(m.ytd) : '—'}</div>
             <div class="cube-goal">Goal: ${fmtC(m.goal)}</div>
-            ${m.stly!==null&&m.stly!==undefined?`<div class="cube-stly">STLY: ${fmtC(m.stly)}</div>`:''}
+            ${m.stly!==null&&m.stly!==undefined&&hasY?`<div class="cube-stly">STLY: ${fmtC(m.stly)} <span style="font-weight:700;color:${m.ytd-m.stly>=0?'#1E9B6B':'#C0143C'}">(${m.ytd-m.stly>=0?'+':''}${m.stly?Math.round((m.ytd-m.stly)/m.stly*100):0}%)</span></div>`:m.stly!==null&&m.stly!==undefined?`<div class="cube-stly">STLY: ${fmtC(m.stly)}</div>`:''}
             ${m.remaining!==null&&m.remaining!==undefined?`<div class="cube-rem" style="color:${m.remaining<=0?'#1E9B6B':'#888'}">Rem: ${fmtC(m.remaining)}</div>`:''}
             <div class="cube-div"></div>
             <div class="cube-pct-row">
@@ -282,6 +282,7 @@ function buildDashboard(cgs) {
               <div class="d-row"><span class="d-lbl">Feb YTD</span><span class="d-val">${m.ytd!==null&&m.ytd!==undefined?fmtC(m.ytd):'—'}</span></div>
               <div class="d-row"><span class="d-lbl">Remaining</span><span class="d-val ${m.remaining<0?'pos':''} ">${fmtC(m.remaining)}</span></div>
               ${m.stly!==null&&m.stly!==undefined?`<div class="d-row"><span class="d-lbl">STLY</span><span class="d-val">${fmtC(m.stly)}</span></div>`:''}
+              ${m.stly!==null&&m.stly!==undefined&&m.ytd!==null&&m.ytd!==undefined?`<div class="d-row"><span class="d-lbl">vs STLY</span><span class="d-val" style="color:${m.ytd-m.stly>=0?'#1E9B6B':'#C0143C'}">${m.ytd-m.stly>=0?'+':''}${fmtC(m.ytd-m.stly)} (${m.stly?((m.ytd-m.stly>=0?'+':'')+Math.round((m.ytd-m.stly)/m.stly*100)):'0'}%)</span></div>`:''}
               ${m.ytd!==null&&m.goal?`<div class="d-row"><span class="d-lbl">% to Goal</span><span class="d-val" style="color:${pColor(Math.round(m.ytd/m.goal*100))}">${Math.round(m.ytd/m.goal*100)}%</span></div>`:''}
             </div>`).join('')}
         </div>
