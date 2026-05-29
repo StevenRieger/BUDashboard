@@ -28,6 +28,7 @@ Local testing without Graph: set BU_LOCAL_XLSX=/path/to/file.xlsx to parse a
 local copy and skip authentication.
 """
 
+import calendar
 import io
 import json
 import os
@@ -161,9 +162,25 @@ def cell_text(cell):
     return None if v is None else str(v).strip()
 
 
+def ytd_labels(header: str):
+    """Derive display labels from the YTD column header, e.g. 'APR YTD' ->
+    ('Apr YTD', 'Apr YTD through April 30, 2026'). Falls back gracefully."""
+    nums = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+            "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}
+    n = nums.get((header or "").strip()[:3].lower())
+    if not n:
+        return "YTD", "Year-to-date"
+    year = datetime.now(CHICAGO).year
+    abbr, full = calendar.month_abbr[n], calendar.month_name[n]
+    last = calendar.monthrange(year, n)[1]
+    return f"{abbr} YTD", f"{abbr} YTD through {full} {last}, {year}"
+
+
 def parse(content: bytes) -> list:
     wb = load_workbook(io.BytesIO(content), data_only=True)
     ws = wb[SHEET_NAME] if SHEET_NAME in wb.sheetnames else wb.active
+
+    ytd_label, ytd_note = ytd_labels(cell_text(ws.cell(row=1, column=COL_YTD)))
 
     groups = {}
     current_group = None
@@ -215,7 +232,7 @@ def parse(content: bytes) -> list:
         g["subgroups"] = [s for s in g["subgroups"] if s["items"]]
         if g["subgroups"]:
             ordered.append(g)
-    return ordered
+    return ordered, {"ytd_label": ytd_label, "ytd_note": ytd_note}
 
 
 # --------------------------------------------------------------------------
@@ -231,13 +248,15 @@ def main():
     else:
         content = download_workbook()
 
-    color_groups = parse(content)
+    color_groups, meta = parse(content)
     if not color_groups:
         print("ERROR: parser produced no groups; refusing to overwrite output.")
         sys.exit(1)
 
     payload = {
         "generated_at": datetime.now(CHICAGO).strftime("%b %d, %Y %H:%M"),
+        "ytd_label": meta["ytd_label"],
+        "ytd_note": meta["ytd_note"],
         "color_groups": color_groups,
     }
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
