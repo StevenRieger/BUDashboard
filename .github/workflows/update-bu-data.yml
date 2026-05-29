@@ -1,0 +1,62 @@
+name: Update BU Dashboard Data
+
+# Regenerates bu_dashboard_data.json from the source Excel workbook on the
+# PCMA Team SharePoint site, then commits it if anything changed.
+#
+# Triggers:
+#   - schedule: every 30 minutes
+#   - workflow_dispatch: manual "Run workflow" button in the Actions tab
+#
+# Required repo secrets (Settings > Secrets and variables > Actions):
+#   AZURE_TENANT_ID      PCMA tenant id
+#   AZURE_CLIENT_ID      App registration (client) id
+#   AZURE_CLIENT_SECRET  App registration client secret value
+#
+# See AUTOMATION_SETUP.md for the one-time setup.
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-bu-data
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Generate bu_dashboard_data.json
+        env:
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+        run: python scripts/build_bu_data.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- bu_dashboard_data.json; then
+            echo "No data changes. Nothing to commit."
+          else
+            git add bu_dashboard_data.json
+            git commit -m "Auto-update BU dashboard data"
+            git push
+            echo "Committed updated BU dashboard data."
+          fi
