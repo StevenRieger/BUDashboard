@@ -1,5 +1,5 @@
 {
-  "generated_at": "Mar 24, 2026 10:42",
+  "generated_at": "May 29, 2026 11:04",
   "color_groups": [
     {
       "id": "enterprise",
@@ -58,7 +58,7 @@
               "stly": 222837
             },
             {
-              "name": "Consulting & AI",
+              "name": "Consulting & AI Subscription Revenue",
               "goal": 652500,
               "ytd": 78096,
               "remaining": 574404,
@@ -123,7 +123,7 @@
           ]
         },
         {
-          "name": "Chapters & Engagement",
+          "name": "Chapters and Engagement Programs",
           "items": [
             {
               "name": "Sponsorships",
@@ -178,7 +178,7 @@
               "stly": null
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 23310,
               "ytd": null,
               "remaining": 23310,
@@ -258,7 +258,7 @@
               "stly": 13218
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 1000,
               "ytd": 2300,
               "remaining": -1300,
@@ -298,7 +298,7 @@
               "stly": null
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 8712,
               "ytd": 0,
               "remaining": 8712,
@@ -370,7 +370,7 @@
               "stly": 4014670
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 4050000,
               "ytd": 4325937,
               "remaining": -275937,
@@ -396,7 +396,7 @@
               "stly": null
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 500000,
               "ytd": null,
               "remaining": 500000,
@@ -422,7 +422,7 @@
               "stly": null
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 850000,
               "ytd": null,
               "remaining": 850000,
@@ -448,7 +448,7 @@
               "stly": null
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 100000,
               "ytd": null,
               "remaining": 100000,
@@ -467,7 +467,7 @@
               "stly": null
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 65000,
               "ytd": null,
               "remaining": 65000,
@@ -486,7 +486,7 @@
               "stly": null
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 172200,
               "ytd": null,
               "remaining": 172200,
@@ -505,7 +505,7 @@
               "stly": null
             },
             {
-              "name": "Events Revenue",
+              "name": "Events",
               "goal": 11250,
               "ytd": null,
               "remaining": 11250,
@@ -566,6 +566,13 @@
               "ytd": 100000,
               "remaining": 20000,
               "stly": 0
+            },
+            {
+              "name": "Events",
+              "goal": 0,
+              "ytd": 0,
+              "remaining": 0,
+              "stly": 2500
             }
           ]
         },
@@ -573,7 +580,7 @@
           "name": "Destinaitor",
           "items": [
             {
-              "name": "Consulting & AI Revenue",
+              "name": "Consulting & AI Subscription Revenue",
               "goal": 322500,
               "ytd": 14096,
               "remaining": 308404,
@@ -594,7 +601,7 @@
           ]
         },
         {
-          "name": "Insights / Consulting",
+          "name": "Insights/Consulting",
           "items": [
             {
               "name": "Sponsorships",
