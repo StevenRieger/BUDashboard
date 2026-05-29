@@ -1,5 +1,5 @@
 {
-  "generated_at": "May 29, 2026 11:04",
+  "generated_at": "May 29, 2026 12:07",
   "color_groups": [
     {
       "id": "enterprise",
@@ -11,58 +11,58 @@
             {
               "name": "Sponsorships",
               "goal": 8864127,
-              "ytd": 4075123,
-              "remaining": 4789004,
-              "stly": 4898977
+              "ytd": 4290196,
+              "remaining": 4573931,
+              "stly": 4465500
             },
             {
               "name": "Partnership Rights",
               "goal": 1927000,
-              "ytd": 799635,
-              "remaining": 1127365,
-              "stly": null
+              "ytd": 854625,
+              "remaining": 1072375,
+              "stly": 834387
             },
             {
               "name": "Memberships",
               "goal": 2716802,
-              "ytd": 426502,
-              "remaining": 2290300,
-              "stly": 386355
+              "ytd": 856035,
+              "remaining": 1860767,
+              "stly": 784594
             },
             {
               "name": "Events",
               "goal": 5781472,
-              "ytd": 4328237,
-              "remaining": 1453235,
-              "stly": 3974996
+              "ytd": 4419837,
+              "remaining": 1361635,
+              "stly": 4052611
             },
             {
               "name": "Educational Products",
               "goal": 948100,
-              "ytd": 109014,
-              "remaining": 839086,
-              "stly": 147047
+              "ytd": 211072,
+              "remaining": 737028,
+              "stly": 249764
             },
             {
               "name": "Digital Advertising",
               "goal": 2770853,
-              "ytd": 634525,
-              "remaining": 2136328,
-              "stly": 769795
+              "ytd": 870660,
+              "remaining": 1900193,
+              "stly": 1010404
             },
             {
               "name": "Print Advertising",
               "goal": 2108500,
-              "ytd": 251975,
-              "remaining": 1856525,
-              "stly": 222837
+              "ytd": 533425,
+              "remaining": 1575075,
+              "stly": 581484
             },
             {
               "name": "Consulting & AI Subscription Revenue",
               "goal": 652500,
-              "ytd": 78096,
-              "remaining": 574404,
-              "stly": 450
+              "ytd": 140159,
+              "remaining": 512341,
+              "stly": 97116
             }
           ]
         }
